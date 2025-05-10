@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController3D : MonoBehaviour
 {
@@ -56,6 +57,7 @@ public class PlayerController3D : MonoBehaviour
         if(other.CompareTag("Goal"))
         {
             Debug.Log("クリア！");
+            SceneManager.LoadScene("ClearScene");
         }
     }
 }
